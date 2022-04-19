@@ -1,0 +1,90 @@
+<html>
+
+<style>
+    .text {
+        font-size: medium;
+    }
+
+
+    .subtext {
+        font-size: large;
+        color: orangered;
+    }
+
+    .heading {
+        font-size: larger;
+        color: orangered;
+    }
+</style>
+
+<head>
+    <title>
+        Home
+    </title>
+</head>
+
+<body>
+    <h2 >Description</h2>
+    <p class='text'>
+        Git is a fast, scalable, distributed revision control system with
+        an unusually rich command set that provides both high-level operations and full access to internals.
+    </p>
+    <h2 class = "heading">Options</h2>
+    <p>
+        <span class="subtext">--version</span>
+        <br>
+        Prints the Git suite version that the git program came from.
+    <p class='text'>
+        This option is internally converted to git version ... and accepts the same options as the git-version
+        command. If --help is also given, it takes precedence over --version.
+    </p>
+    <p class='text'>
+        <span class="subtext">--help</span>
+        <br>
+        Prints the synopsis and a list of the most commonly used commands. If the option --all or -a is given then all
+        available commands are printed. If a Git command is named this option will bring up the manual page for that
+        command.
+    <p class='text'>
+        Other options are available to control how the manual page is displayed. See git-help for more information,
+        because git --help ... is converted internally into git help ....
+    </p>
+    </p>
+    <p>
+        **For more details on git Options please visit <a href="https://git-scm.com/docs/git#_options">OPTIONS</a>
+    </p>
+    <h2 class = "heading">Commands</h2>
+    <p class='text'>
+        We divide Git into various cateogaries.
+    </p>
+    <p class='text'>
+        The category of commands are as below:
+        <br>
+    <ul>
+        <li style="color:orangered;"><span class="subtext" style="color:#212529;"><a href="{% url 'porcelain' %}">Main
+                    porcelain
+                    commands</a></span></li>
+        <li style="color:orangered;"><span class="subtext" style="color:#212529;"><a
+                    href="{% url 'ancillary' %}">Ancillary
+                    Commands</a></span></li>
+        <li style="color:orangered;"><span class="subtext" style="color:#212529;"><a
+                    href="{% url 'interaction' %}">Interacting with
+                    Others</a></span></li>
+        <li style="color:orangered;"><span class="subtext" style="color:#212529;"><a href="{% url 'mistakes' %}">Reset,
+                    restore and
+                    revert</a></span></li>
+        <li style="color:orangered;"><span class="subtext" style="color:#212529;"><a
+                    href="{% url 'manipulation' %}">Manipulation
+                    commands</a></span></li>
+        <li style="color:orangered;"><span class="subtext" style="color:#212529;"><a
+                    href="{% url 'interrogation' %}">Interrogation
+                    commands</a></span></li>
+        <li style="color:orangered;"><span class="subtext" style="color:#212529;"><a href="{% url 'syncing' %}">Syncing
+                    repositories</a></span></li>
+        <li style="color:orangered;"><span class="subtext" style="color:#212529;"><a href="{% url 'helper' %}">Internal
+                    helper
+                    commands</a></span></li>
+    </ul>
+    </p>
+</body>
+
+</html>
