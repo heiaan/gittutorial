@@ -1,4 +1,23 @@
+{% extends 'gitt/header.html' %}
+{% block content %}
+
 <html>
+<style>
+    .text {
+        font-size: large;
+    }
+
+
+    .subtext {
+        font-size: larger;
+        color: orangered;
+    }
+
+    .heading {
+        font-size: xx-large;
+        color: orangered;
+    }
+</style>
 
 <head>
     <title>
@@ -7,83 +26,86 @@
 </head>
 
 <body>
-    <h2 style="color:orangered">Manipulation commands</h2>
-    <p class = 'text'>git-apply<br>
+    <br>
+    <h2 class='heading'>Manipulation commands</h2>
+    <br>
+    <p class='text'><span class="subtext">git-apply</span><br>
         Apply a patch to files and/or to the index
     </p>
-
-    <p class = 'text'>git-checkout-index<br>
+    <br>
+    <p class='text'><span class="subtext">git-checkout-index</span><br>
         Copy files from the index to the working tree
     </p>
-
-    <p class = 'text'>git-commit-graph<br>
+    <br>
+    <p class='text'><span class="subtext">git-commit-graph</span><br>
         Write and verify Git commit-graph files
     </p>
-
-    <p class = 'text'>git-commit-tree<br>
+    <br>
+    <p class='text'><span class="subtext">git-commit-tree</span><br>
         Create a new commit object
     </p>
-
-    <p class = 'text'>git-hash-object<br>
+    <br>
+    <p class='text'><span class="subtext">git-hash-object</span><br>
         Compute object ID and optionally creates a blob from a file
     </p>
-
-    <p class = 'text'>git-index-pack<br>
+    <br>
+    <p class='text'><span class="subtext">git-index-pack</span><br>
         Build pack index file for an existing packed archive
     </p>
-
-    <p class = 'text'>git-merge-file<br>
+    <br>
+    <p class='text'><span class="subtext">git-merge-file</span><br>
         Run a three-way file merge
     </p>
-
-    <p class = 'text'>git-merge-index<br>
+    <br>
+    <p class='text'><span class="subtext">git-merge-index</span><br>
         Run a merge for files needing merging
     </p>
-
-    <p class = 'text'>git-mktag<br>
+    <br>
+    <p class='text'><span class="subtext">git-mktag</span><br>
         Creates a tag object with extra validation
     </p>
-
-    <p class = 'text'>git-mktree<br>
+    <br>
+    <p class='text'><span class="subtext">git-mktree</span><br>
         Build a tree-object from ls-tree formatted text
     </p>
-
-    <p class = 'text'>git-multi-pack-index<br>
+    <br>
+    <p class='text'><span class="subtext">git-multi-pack-index</span><br>
         Write and verify multi-pack-indexes
     </p>
-
-    <p class = 'text'>git-pack-objects<br>
+    <br>
+    <p class='text'><span class="subtext">git-pack-objects</span><br>
         Create a packed archive of objects
     </p>
-
-    <p class = 'text'>git-prune-packed<br>
+    <br>
+    <p class='text'><span class="subtext">git-prune-packed</span><br>
         Remove extra objects that are already in pack files
     </p>
-
-    <p class = 'text'>git-read-tree<br>
+    <br>
+    <p class='text'><span class="subtext">git-read-tree</span><br>
         Reads tree information into the index
     </p>
-
-    <p class = 'text'>git-symbolic-ref<br>
+    <br>
+    <p class='text'><span class="subtext">git-symbolic-ref</span><br>
         Read, modify and delete symbolic refs
     </p>
-
-    <p class = 'text'>git-unpack-objects<br>
+    <br>
+    <p class='text'><span class="subtext">git-unpack-objects</span><br>
         Unpack objects from a packed archive
     </p>
-
-    <p class = 'text'>git-update-index<br>
+    <br>
+    <p class='text'><span class="subtext">git-update-index</span><br>
         Register file contents in the working tree to the index
     </p>
-
-    <p class = 'text'>git-update-ref<br>
+    <br>
+    <p class='text'><span class="subtext">git-update-ref</span><br>
         Update the object name stored in a ref safely
     </p>
-
-    <p class = 'text'>git-write-tree<br>
+    <br>
+    <p class='text'><span class="subtext">git-write-tree</span><br>
         Create a tree object from the current index
     </p>
 
 </body>
 
 </html>
+{% endblock %}

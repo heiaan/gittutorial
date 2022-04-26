@@ -1,18 +1,20 @@
-<html>
+{% extends 'gitt/header.html' %}
+{% block content %}
 
+<html>
 <style>
     .text {
-        font-size: medium;
+        font-size: large;
     }
 
 
     .subtext {
-        font-size: large;
+        font-size: larger;
         color: orangered;
     }
 
     .heading {
-        font-size: larger;
+        font-size: xx-large;
         color: orangered;
     }
 </style>
@@ -24,13 +26,16 @@
 </head>
 
 <body>
-    <h2 >Description</h2>
+    <br>
+    <h2 class="heading">Description</h2>
     <p class='text'>
         Git is a fast, scalable, distributed revision control system with
         an unusually rich command set that provides both high-level operations and full access to internals.
     </p>
-    <h2 class = "heading">Options</h2>
-    <p>
+    <br>
+    <h2 class="heading">Options</h2>
+    <br>
+    <p class='text'>
         <span class="subtext">--version</span>
         <br>
         Prints the Git suite version that the git program came from.
@@ -38,6 +43,7 @@
         This option is internally converted to git version ... and accepts the same options as the git-version
         command. If --help is also given, it takes precedence over --version.
     </p>
+    <br>
     <p class='text'>
         <span class="subtext">--help</span>
         <br>
@@ -52,10 +58,12 @@
     <p>
         **For more details on git Options please visit <a href="https://git-scm.com/docs/git#_options">OPTIONS</a>
     </p>
-    <h2 class = "heading">Commands</h2>
+    <br>
+    <h2 class="heading">Commands</h2>
     <p class='text'>
         We divide Git into various cateogaries.
     </p>
+    <br>
     <p class='text'>
         The category of commands are as below:
         <br>
@@ -88,3 +96,5 @@
 </body>
 
 </html>
+
+{% endblock %}

@@ -1,4 +1,23 @@
+{% extends 'gitt/header.html' %}
+{% block content %}
+
 <html>
+<style>
+    .text {
+        font-size: large;
+    }
+
+
+    .subtext {
+        font-size: larger;
+        color: orangered;
+    }
+
+    .heading {
+        font-size: xx-large;
+        color: orangered;
+    }
+</style>
 
 <head>
     <title>
@@ -7,19 +26,27 @@
 </head>
 
 <body>
-    <h2 style="color:orangered">Reset, restore and revert</h2>
+    <h2 class="heading">Reset, restore and revert</h2>
     <br>
     There are three commands with similar names: git reset, git restore and git revert.
 
-    <p class = 'text'>git-revert is about making a new commit that reverts the changes made by other commits.</p>
+    <p class='text'><span class='subtext'>git-revert</span> is about making a new commit that reverts the changes made
+        by other commits.</p>
 
-    <p class = 'text'>git-restore is about restoring files in the working tree from either the index or another commit. This command
+    <p class='text'><span class='subtext'>git-restore</span> is about restoring files in the working tree from either
+        the index or another commit.
+        This command
         does not update your branch. The command can also be used to restore files in the index from another commit.</p>
 
-    <p class = 'text'>git-reset is about updating your branch, moving the tip in order to add or remove commits from the branch.
+    <p class='text'><span class='subtext'>git-reset</span> is about updating your branch, moving the tip in order to add
+        or remove commits from the
+        branch.
         This operation changes the commit history.</p>
 
-    <p class = 'text'>git reset can also be used to restore the index, overlapping with git restore.</p>
+    <p class='text'><span class='subtext'>git reset</span> can also be used to restore the index, overlapping with git
+        restore.</p>
 </body>
 
 </html>
+
+{% endblock %}

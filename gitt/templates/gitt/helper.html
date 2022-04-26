@@ -1,4 +1,23 @@
+{% extends 'gitt/header.html' %}
+{% block content %}
+
 <html>
+<style>
+    .text {
+        font-size: large;
+    }
+
+
+    .subtext {
+        font-size: larger;
+        color: orangered;
+    }
+
+    .heading {
+        font-size: xx-large;
+        color: orangered;
+    }
+</style>
 
 <head>
     <title>
@@ -7,77 +26,79 @@
 </head>
 
 <body>
-    <h2 style="color:orangered">Internal helper commands</h2>
     <br>
-    These are internal helper commands used by other commands; end users typically do not use them directly.
-
-    <p class = 'text'>git-check-attr<br>
+    <h2 class="heading">Internal helper commands</h2><br>
+    <span class = "text">These are internal helper commands used by other commands; end users typically do not use them directly.</span>
+    <br><br>
+    <p class='text'><span class="subtext">git-check-attr</span><br>
         Display gitattributes information
     </p>
-
-    <p class = 'text'>git-check-ignore<br>
+    <br>
+    <p class='text'><span class="subtext">git-check-ignore</span><br>
         Debug gitignore / exclude files
     </p>
-
-    <p class = 'text'>git-check-mailmap<br>
+    <br>
+    <p class='text'><span class="subtext">git-check-mailmap</span><br>
         Show canonical names and email addresses of contacts
     </p>
-
-    <p class = 'text'>git-check-ref-format<br>
+    <br>
+    <p class='text'><span class="subtext">git-check-ref-format</span><br>
         Ensures that a reference name is well formed
     </p>
-
-    <p class = 'text'>git-column<br>
+    <br>
+    <p class='text'><span class="subtext">git-column</span><br>
         Display data in columns
     </p>
-
-    <p class = 'text'>git-credential<br>
+    <br>
+    <p class='text'><span class="subtext">git-credential</span><br>
         Retrieve and store user credentials
     </p>
-
-    <p class = 'text'>git-credential-cache<br>
+    <br>
+    <p class='text'><span class="subtext">git-credential-cache</span><br>
         Helper to temporarily store passwords in memory
     </p>
-
-    <p class = 'text'>git-credential-store<br>
+    <br>
+    <p class='text'><span class="subtext">git-credential-store</span><br>
         Helper to store credentials on disk
     </p>
-
-    <p class = 'text'>git-fmt-merge-msg<br>
+    <br>
+    <p class='text'><span class="subtext">git-fmt-merge-msg</span><br>
         Produce a merge commit message
     </p>
-
-    <p class = 'text'>git-interpret-trailers<br>
+    <br>
+    <p class='text'><span class="subtext">git-interpret-trailers</span><br>
         Add or parse structured information in commit messages
     </p>
-
-    <p class = 'text'>git-mailinfo<br>
+    <br>
+    <p class='text'><span class="subtext">git-mailinfo</span><br>
         Extracts patch and authorship from a single e-mail message
     </p>
-
-    <p class = 'text'>git-mailsplit<br>
+    <br>
+    <p class='text'><span class="subtext">git-mailsplit</span><br>
         Simple UNIX mbox splitter program
     </p>
-
-    <p class = 'text'>git-merge-one-file<br>
+    <br>
+    <p class='text'><span class="subtext">git-merge-one-file</span><br>
         The standard helper program to use with git-merge-index
     </p>
-
-    <p class = 'text'>git-patch-id<br>
+    <br>
+    <p class='text'><span class="subtext">git-patch-id</span><br>
         Compute unique ID for a patch
     </p>
-
-    <p class = 'text'>git-sh-i18n<br>
+    <br>
+    <p class='text'><span class="subtext">git-sh-i18n</span><br>
         Git’s i18n setup code for shell scripts
     </p>
-
-    <p class = 'text'>git-sh-setup<br>
+    <br>
+    <p class='text'><span class="subtext">git-sh-setup</span><br>
         Common Git shell script setup code
     </p>
-
-    <p class = 'text'>git-stripspace<br>
+    <br>
+    <p class='text'><span class="subtext">git-stripspace</span><br>
         Remove unnecessary whitespace
     </p>
 </body>
 
 </html>
+
+{% endblock %}

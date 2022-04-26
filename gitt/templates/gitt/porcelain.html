@@ -1,4 +1,23 @@
+{% extends 'gitt/header.html' %}
+{% block content %}
+
 <html>
+<style>
+    .text {
+        font-size: large;
+    }
+
+
+    .subtext {
+        font-size: larger;
+        color: orangered;
+    }
+
+    .heading {
+        font-size: xx-large;
+        color: orangered;
+    }
+</style>
 
 <head>
     <title>
@@ -7,178 +26,224 @@
 </head>
 
 <body>
-    <h2 style="color:orangered">Porcelain commands</h2>
-    <p class = 'text'>git-add<br>
+    <br>
+    <h2 class='heading'>Porcelain commands</h2>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="https://git-scm.com/docs/git-add">git-add</a></span><br>
         Add file contents to the index
     </p>
-
-    <p class = 'text'>git-am<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="https://git-scm.com/docs/git-am">git-am</a></span><br>
         Apply a series of patches from a mailbox
     </p>
-
-    <p class = 'text'>git-archive<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="https://git-scm.com/docs/git-archive">git-archive</a></span><br>
         Create an archive of files from a named tree
     </p>
-
-    <p class = 'text'>git-bisect<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="https://git-scm.com/docs/git-bisect">git-bisect</a></span><br>
         Use binary search to find the commit that introduced a bug
     </p>
-
-    <p class = 'text'>git-branch<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="https://git-scm.com/docs/git-branch">git-branch</a></span><br>
         List, create, or delete branches
     </p>
-
-    <p class = 'text'>git-bundle
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="https://git-scm.com/docs/git-bundle">git-bundle</a></span><br>
         Move objects and refs by archive
     </p>
-
-    <p class = 'text'>git-checkout<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-checkout</a></span><br>
         Switch branches or restore working tree files
     </p>
-
-    <p class = 'text'>git-cherry-pick<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-cherry-pick</a></span><br>
         Apply the changes introduced by some existing commits
     </p>
-
-    <p class = 'text'>git-citool<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-citool</a></span><br>
         Graphical alternative to git-commit
     </p>
-
-    <p class = 'text'>git-clean<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-clean</a></span><br>
         Remove untracked files from the working tree
     </p>
-
-    <p class = 'text'>git-clone<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-clone</a></span><br>
         Clone a repository into a new directory
     </p>
-
-    <p class = 'text'>git-commit<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-commit</a></span><br>
         Record changes to the repository
     </p>
-
-    <p class = 'text'>git-describe<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-describe</a></span><br>
         Give an object a human readable name based on an available ref
     </p>
-
-    <p class = 'text'>git-diff<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-diff</a></span><br>
         Show changes between commits, commit and working tree, etc
     </p>
-
-    <p class = 'text'>git-fetch<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-fetch</a></span><br>
         Download objects and refs from another repository
     </p>
-
-    <p class = 'text'>git-format-patch<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-format-patch</a></span><br>
         Prepare patches for e-mail submission
     </p>
-
-    <p class = 'text'>git-gc<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-gc</a></span><br>
         Cleanup unnecessary files and optimize the local repository
     </p>
-
-    <p class = 'text'>git-grep<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-grep</a></span><br>
         Print lines matching a pattern
     </p>
-
-    <p class = 'text'>git-gui<br>
-        A portable graphical interface to Git
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-gui</a></span><br>
+        A portable graphical interface to git
     </p>
-
-    <p class = 'text'>git-init<br>
-        Create an empty Git repository or reinitialize an existing one
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-init</a></span><br>
+        Create an empty git repository or reinitialize an existing one
     </p>
-
-    <p class = 'text'>git-log<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-log</a></span><br>
         Show commit logs
     </p>
-
-    <p class = 'text'>git-maintenance<br>
-        Run tasks to optimize Git repository data
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-maintenance</a></span><br>
+        Run tasks to optimize git repository data
     </p>
-
-    <p class = 'text'>git-merge<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-merge</a></span><br>
         Join two or more development histories together
     </p>
-
-    <p class = 'text'>git-mv<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-mv</a></span><br>
         Move or rename a file, a directory, or a symlink
     </p>
-
-    <p class = 'text'>git-notes<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-notes</a></span><br>
         Add or inspect object notes
     </p>
-
-    <p class = 'text'>git-pull<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-pull</a></span><br>
         Fetch from and integrate with another repository or a local branch
     </p>
-
-    <p class = 'text'>git-push<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-push</a></span><br>
         Update remote refs along with associated objects
     </p>
-
-    <p class = 'text'>git-range-diff<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-range-diff</a></span><br>
         Compare two commit ranges (e.g. two versions of a branch)
     </p>
-
-    <p class = 'text'>git-rebase<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-rebase</a></span><br>
         Reapply commits on top of another base tip
     </p>
-
-    <p class = 'text'>git-reset<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-reset</a></span><br>
         Reset current HEAD to the specified state
     </p>
-
-    <p class = 'text'>git-restore<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-restore</a></span><br>
         Restore working tree files
     </p>
-
-    <p class = 'text'>git-revert<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-revert</a></span><br>
         Revert some existing commits
     </p>
-
-    <p class = 'text'>git-rm<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-rm</a></span><br>
         Remove files from the working tree and from the index
     </p>
-
-    <p class = 'text'>git-shortlog<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-shortlog</a></span><br>
         Summarize git log output
     </p>
-
-    <p class = 'text'>git-show<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-show</a></span><br>
         Show various types of objects
     </p>
-
-    <p class = 'text'>git-sparse-checkout<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-sparse-checkout</a></span><br>
         Initialize and modify the sparse-checkout
     </p>
-
-    <p class = 'text'>git-stash<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-stash</a></span><br>
         Stash the changes in a dirty working directory away
     </p>
-
-    <p class = 'text'>git-status<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-status</a></span><br>
         Show the working tree status
     </p>
-
-    <p class = 'text'>git-submodule<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-submodule</a></span><br>
         Initialize, update or inspect submodules
     </p>
-
-    <p class = 'text'>git-switch<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-switch</a></span><br>
         Switch branches
     </p>
-
-    <p class = 'text'>git-tag<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-tag</a></span><br>
         Create, list, delete or verify a tag object signed with GPG
     </p>
-
-    <p class = 'text'>git-worktree<br>
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">git-worktree</a></span><br>
         Manage multiple working trees
     </p>
-
-    <p class = 'text'>gitk<br>
-        The Git repository browser
+    <br>
+    <p class='text'>
+        <span class="subtext"><a href="">gitk</a></span><br>
+        The git repository browser
     </p>
 </body>
 
 </html>
+{% endblock %}

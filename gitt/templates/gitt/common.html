@@ -1,0 +1,716 @@
+{% extends 'gitt/header.html' %}
+{% block content %}
+
+<html>
+<style>
+    .text {
+        font-size: large;
+    }
+
+
+    .subtext {
+        font-size: larger;
+        color: orangered;
+    }
+
+    .heading {
+        font-size: xx-large;
+        color: orangered;
+    }
+</style>
+
+<head>
+    <title>
+        Common
+    </title>
+</head>
+
+<body>
+    <div>
+        <h2 class="heading">Basic Git Commands</h2>
+        <p class="text">In this section, you will learn the essential Git commands. These basic Git commands are the
+            foundation to learn more advanced commands.<br>
+        </p>
+        <p class="text">
+            Here are the nine useful Git commands.
+
+            <br>
+        </p>
+        <br>
+        <p class='text'>
+            <span class="subtext">1. git config</span>
+            <br>
+            Git config command is super helpful. Especially when you are using Git for the first time, or you have a new
+            Git installation. This command will set up your identity - Name and Email address. And this information will
+            be used with every commit.
+            <br>
+
+            <br>
+
+
+            Usage
+
+            <br>
+            <br>
+
+            <span class="subtext">$ git config --global user.name "Your name"</span>
+            <br>
+            <span class="subtext">$ git config --global user.email "Your email"</span>
+            <br>
+            <br>
+            <br>
+        </p>
+
+
+        <p class='text'>
+            <span class="subtext">2. git version</span><br>
+            As its name implies, it's just to check which version of Git you are using. At the moment, writing this
+            guide, the latest version of Git for Windows is 2.31.1. It was released on 27th March 2021.
+            <br>
+            <br>
+
+            Usage
+
+            <br>
+            <br>
+            <span class="subtext">$ git version
+            <br>
+
+            <br>
+            <br>
+            <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">3. git init</span><br>
+            This is probably the first command you use to start a new project in Git. This command will create a blank
+            new repository, and then you can store your source code inside this repo.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git init</span>
+            <br>
+            Or you can use the repository name with your git init command.
+            <br>
+            <span class="subtext">$ git init &lt your repository name &gt</span>
+                <br>
+                <br>
+                <br>
+                <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">4. git clone</span><br>
+            The git clone command will use an existing repository to copy. There is one main difference between the git
+            init and git clone.
+            <br>
+            You will use the Git clone when you need to make a copy on an existing repository. The git clone command
+            internally uses the git init command first and then checks out all its contents.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$git clone &lt;your project URL&gt;</span>
+                <br>
+
+                <br>
+                <br>
+                <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">5. git add</span><br>
+            The Git add command will add all the new code files or modified files into your repository. This command
+            offers different options to add files and folders.
+            <br>
+            Here is the Usage of the Git add command.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git add your_file_name (it will add a single file to your staging area)</span>
+            <br>
+            <span class="subtext">$ git add * ( this option will add all the modified and new files to the staging area)</span>
+            <br>
+
+            <br>
+            <br>
+            <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">6. git commit</span><br>
+            This Git command is essential. Your project quality may drop if you will not use this command appropriately.
+            There is another article about how to use Git commands property, and you can read that here.
+            <br>
+            In simple words, the Git commit will add your changes to your local repository.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git commit -m “your useful commit message”</span>
+            <br>
+            <br>
+            <br>
+            <br>
+        </p>
+
+        <p class='text'>
+            <span class="subtext">7. git status</span><br>
+            This Git command is convenient to see how many files are there which need your attention. You can run this
+            command at any time.
+            <br>
+            You can use it in between Git add, and Git commits to see the status.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git status</span>
+            <br>
+            <br>
+            <br>
+            <br>
+        </p>
+
+        <p class='text'>
+            <span class="subtext">8. git branch</span><br>
+            Most of the time, you have multiple branches in your Git repository. In simple terms, the branch is an
+            independent line of code development.
+            <br>
+            With the Git branch command, you can manage your branches effectively. There are many different options and
+            switches of the Git branch.
+            <br>
+            To make it simple, here I will highlight how you can create and delete a Git branch (in case you need more
+            depth, you can refer to - Git Branching and Merging section of this article).
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            (i) To list all branches:
+            <br>
+            <span class="subtext">$ git branch</span>
+            <br>
+
+            (ii) To create a new branch:
+            <br>
+            <span class="subtext">$ git branch &lt;branch_name&gt;</span>
+                <br>
+
+                (iii) To delete a branch:
+                <br>
+                <span class="subtext">$ git branch -d &lt;branch_name&gt;</span>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">9. git checkout</span><br>
+            This Git command is used to switch between branches. This is one of the powerful git commands and can use
+            used as a swiss knife,
+            <br>
+            In simple words, here is the syntax to switch to another branch.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git checkout &lt;branch_name&gt;</span>
+                <br>
+                Also, you can create and checkout to a branch in a single like, here is the <br>
+                Usage
+                <br> for that
+                <br>
+                <span class="subtext">$ git checkout -b &lt;your_new_branch_name&gt;</span>
+                    <br>
+
+
+                    Intermediate Level Git Commands
+                    After the basic Git commands, it's time to share with you intermediate Git commands; these Git
+                    commands are super helpful if you need to collaborate with your team, share your code with others.
+                    Also, there are commands like Git log that will help to see the history of previous commits.
+                    <br><br>
+                    <br>
+                    <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">10. git remote</span><br>
+            Git remote command acts like a border, and If you need to connect with the outside world, you have to use
+            the Git remote command. This command will connect your local repository to the remote.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git remote add &lt;shortname&gt;</span>
+                <url>
+                    <br>
+
+
+
+                    <br>
+                    <br>
+                    <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">11. git push</span><br>
+            Once you are connected with the remote repository (with the help of the git remote command), it's time to
+            push your changes to that repository.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git push -u <short_name>
+                &lt;your_branch_name&gt;</span>
+                    <br>
+                    Example
+                    <br>
+                    <span class="subtext">$ git push -u origin feature_branch</span>
+                    <br>
+
+                    You should have origin and upstream set up before you use Git push. And here is the command to set
+                    up upstream.
+                    <br>
+                    <br>
+                    Usage
+                    <br>
+                    <br>
+                    <span class="subtext">$ git push --set-upstream &lt;short_name&gt;
+                        &lt;branch_name&gt;</span>
+                            <br>
+                            Example
+                            <br>
+                            <span class="subtext">$ git push --set-upstream origin feature_branch</span>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+        </p>
+
+        <p class='text'>
+            <span class="subtext">13. git fetch</span><br>
+            When you need to download other team members' changes, you have to use git fetch.
+            <br>
+            This command will download all information for commits, refs, etc., so you can review it before applying
+            those changes in your local repository.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git fetch</span>
+            <br>
+            <br>
+            <br>
+            <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">14. git pull</span><br>
+            The Git pull command downloads the content (and not the metadata) and immediately updates your local
+            repository with the latest content.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git pull &lt;remote_url&gt;</span>
+                <br>
+
+                <br>
+                <br>
+                <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">15. git stash</span><br>
+            This Git command temporarily stores your modified files. You can work in stashed with the following Git
+            command.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git stash</span>
+            <br>
+            And you can view all of your stashes with the following command
+            <br>
+            <span class="subtext">$ git stash list</span>
+            <br>
+            And if you need a apply a stash to a branch, simply use apply
+            <br>
+            <span class="subtext">$ git stash apply</span>
+            <br>
+
+            <br>
+            <br>
+            <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">16. git log</span><br>
+            With the help of the Git log, you can see all the previous commits with the most recent commit appear first.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git log</span>
+            <br>
+            By default, it will show you all the commits of the currently checked out branch, but you can force it to
+            see all the commits of all the branches with all options.
+            <br>
+            <span class="subtext">$ git log --all</span>
+            <br>
+
+            <br>
+            <br>
+            <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">17. git shortlog</span>
+            The shortlog command shows you a summary from the Git log command. This command is helpful if you are just
+            interested in the short summary.
+            <br>
+            This command is helpful to see who worked on what as it group author with their commits.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git shortlog</span>
+            <br><br>
+            <br>
+            <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">18. git show</span><br>
+            Compared to the Git log, this command git show will show you details about a specific commit.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git show &lt;your_commit_hash&gt;</span>
+                <br>
+
+                <br>
+                <br>
+                <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">19. git rm</span><br>
+            Sometimes you need to delete files from your codebase, and in that case, you can use the Git rm command.
+            <br>
+            It can delete tracked files from the index and the working directory.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git rm &lt;your_file_name&gt;</span>
+                <br>
+
+                <br>
+                <br>
+                <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">20. git merge</span><br>
+            Git merge helps you to integrate changes from two branches into a single branch.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git merge &lt;branch_name&gt;</span>
+                <br>
+                This command will merge the <branch_name> into your current selected branch.
+                    <br>
+
+
+                    <h2 class="heading">Advanced Level Git Commands</h2>
+                    <p class='text'>And now the time to up one more level. In this section, you will learn the advanced Git commands.
+                    These commands will take time and practice.<br><br>
+
+                    Once you know the basics of these commands, it will be easy to use them every day.
+                    </p>
+                    <br>
+                    <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">21. git rebase </span><br>
+            Git rebase similar to the git merge command. It integrates two branches into a single branch with one
+            exception. A git rebase command rewrites the commit history.
+            <br>
+            You should use the Git rebase command when you have multiple private branches to consolidate into a single
+            branch. And it will make the commit history linear.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git rebase</span>
+            <base>
+            <br>
+
+            <br>
+            <br>
+            <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">22. git bisect </span><br>
+            The Git bisect command helps you to find bad commits.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            i) To start the git bisect
+            <br>
+            <span class="subtext">$ git bisect start</span>
+            <br>
+
+            ii) let git bisect know about a good commit
+            <br>
+            <span class="subtext">$ git bisect good a123</span>
+            <br>
+
+            iii) And let git bisect know about a bad commit
+            <br>
+            <span class="subtext">$ git bisect bad z123</span>
+            <br>
+            With Git bisect you can narrow down the broken code within a few minutes.
+            <br>
+            <br>
+            <br>
+            <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">23. git cherry-pick</span><br>
+            Git cherry-pick is a helpful command. It's a robust command and allows you to pick any commit from any
+            branch and apply it to any other branch.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git cherry-pick &lt;commit-hash&gt;</span>
+                <br>
+                Git cherry-pick doesn’t modify the history of a repository; instead, it adds to the history.
+                <br>
+
+                <br>
+                <br>
+                <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">24. git archive</span><br>
+            Git archive command will combine multiple files into a single file. It's like a zip utility, so it means you
+            can extract the archive files to get individual files.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git archive --format zip HEAD > archive-HEAD.zip</span>
+            <br>
+            It will create a zip archive of the current revision.
+            <br>
+
+            <br>
+            <br>
+            <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">25. git pull --rebase</span><br>
+            Most of the time, you need to do rebase (and no merge) when you use Git pull.
+            <br>
+            In that case, you can use the option
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git pull --rebase</span>
+            <br>
+            It will help you to keep the history clean. Also, you can avoid multiple merges.
+            <br>
+
+            <br>
+            <br>
+            <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">26. git blame </span><br>
+            If you need to examine the content of any file line by line, you need to use git blame. It helps you to
+            determine who made the changes to a file.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git blame &lt;your_file_name&gt;</span>
+                <br>
+
+                <br>
+                <br>
+                <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">27. git tag</span><br>
+            In Git, tags are helpful, and you can use them to manage the release. You can think of a Git tag like a
+            branch that will not change. It is significantly more important if you are making a public release.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git tag -a v1.0.0</span>
+            <br>
+            <br>
+            <br>
+            <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">28. git verify-commit</span><br>
+            The git verify-commit command will check the gpg signature. GPG or “GNU Privacy Guard” is the tool used in
+            sign files and contains their signatures.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git verify-commit &lt;commit&gt;</span>
+                <br>
+
+                <br>
+                <br>
+                <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">29. git verify-tag</span><br>
+            In the same way, you can confirm a tag.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git verify-tag &lt;tag&gt;</span>
+
+                <br><br>
+                <br>
+                <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">30. git diff</span><br>
+            Most of the time, you need to compare two git files or branches before you commit or push. Here is a handy
+            command to do that.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            i) to compare the working directory with the local repo:
+            <br>
+            <span class="subtext">$ git diff HEAD &lt;filename&gt;</span>
+                <br>
+                ii) to compare two branches:
+                <br>
+                <span class="subtext">$ git diff</span>
+                <source branch>
+                <target branch>
+                    <br>
+
+                    <br>
+                    <br>
+                    <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">31. git citool</span><br>
+            Git citool is a graphics alternative of the Git commit.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git citool</span>
+
+            <br>
+
+            <br>
+            <br>
+            <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">32. git mv</span><br>
+            To rename a git file. It will accept two arguments, source and target file name.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git mv &lt;old-file-name&gt;
+                &lt;new-file-name&gt;</span>
+                    <br>
+
+                    <br>
+                    <br>
+                    <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">33. git clean</span><br>
+            You can deal with untracked files by using the Git clean command. You can remove all the untracked files
+            from your working directory by using this command. In case you want to deal with tracked files you need to
+            use the Git reset command.
+            <br>
+            <br>
+            Usage
+            <br><br>
+
+            <span class="subtext">$ git clean</span>
+            <br>
+
+            <br>
+            <br>
+            <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">34. git help</span><br>
+            There are many commands in Git, and if you need more help with any command, you can use git help at any time
+            from the terminal.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git help &lt;git_command&gt;</span>
+                <br>
+
+                <br>
+                <br>
+                <br>
+        </p>
+        <p class='text'>
+            <span class="subtext">35. git whatchanged</span><br>
+            This command does the same thing as git log but in a raw form. And it’s in the git because of historical
+            reasons.
+            <br>
+            <br>
+            Usage
+            <br>
+            <br>
+            <span class="subtext">$ git whatchanged</span>
+            <br>
+            <br>
+            <br>
+            <br>
+        </p>
+    </div>
+
+</body>
+
+</html>
+
+{% endblock %}

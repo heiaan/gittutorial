@@ -37,3 +37,8 @@ def Helper(request):
 
 def Mistakes(request):
     return render(request, 'gitt/mistakes.html')
+
+
+def CommonCommands(request):
+    return render(request, 'gitt/common.html')
+

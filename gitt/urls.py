@@ -11,4 +11,5 @@ urlpatterns = [
     path('syncing', views.Syncing, name='syncing'),
     path('helper', views.Helper, name='helper'),
     path('mistakes', views.Mistakes, name='mistakes'),
+    path('common', views.CommonCommands, name='common'),
 ]

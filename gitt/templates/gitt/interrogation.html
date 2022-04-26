@@ -1,4 +1,23 @@
+{% extends 'gitt/header.html' %}
+{% block content %}
+
 <html>
+<style>
+    .text {
+        font-size: large;
+    }
+
+
+    .subtext {
+        font-size: larger;
+        color: orangered;
+    }
+
+    .heading {
+        font-size: xx-large;
+        color: orangered;
+    }
+</style>
 
 <head>
     <title>
@@ -7,91 +26,95 @@
 </head>
 
 <body>
-    <h2 style="color:orangered">Interrogation commands</h2>
-    <p class = 'text'>git-cat-file<br>
+    <br>
+    <h2 class="heading">Interrogation commands</h2>
+    <br>
+    <p class='text'><span class="subtext">git-cat-file</span><br>
         Provide content or type and size information for repository objects
     </p>
-
-    <p class = 'text'>git-cherry<br>
-        Find <commits yet to be applied to upstream </p>
-
-            <p class = 'text'>git-diff-files<br>
-                Compares files in the working tree and the index
-            </p>
-
-            <p class = 'text'>git-diff-index<br>
-                Compare a tree to the working tree or index
-            </p>
-
-            <p class = 'text'>git-diff-tree<br>
-                Compares the content and mode of blobs found via two tree objects
-            </p>
-
-            <p class = 'text'>git-for-each-ref<br>
-                Output information on each ref
-            </p>
-
-            <p class = 'text'>git-for-each-repo<br>
-                Run a Git command on a list of repositories
-            </p>
-
-            <p class = 'text'>git-get-tar-commit-id<br>
-                Extract commit ID from an archive created using git-archive
-            </p>
-
-            <p class = 'text'>git-ls-files<br>
-                Show information about files in the index and the working tree
-            </p>
-
-            <p class = 'text'>git-ls-remote<br>
-                List references in a remote repository
-            </p>
-
-            <p class = 'text'>git-ls-tree<br>
-                List the contents of a tree object
-            </p>
-
-            <p class = 'text'>git-merge-base<br>
-                Find as good common ancestors as possible for a merge
-            </p>
-
-            <p class = 'text'>git-name-rev<br>
-                Find symbolic names for given revs
-            </p>
-
-            <p class = 'text'>git-pack-redundant<br>
-                Find redundant pack files
-            </p>
-
-            <p class = 'text'>git-rev-list<br>
-                Lists commit objects in reverse chronological order
-            </p>
-
-            <p class = 'text'>git-rev-parse<br>
-                Pick out and massage parameters
-            </p>
-
-            <p class = 'text'>git-show-index<br>
-                Show packed archive index
-            </p>
-
-            <p class = 'text'>git-show-ref<br>
-                List references in a local repository
-            </p>
-
-            <p class = 'text'>git-unpack-file<br>
-                Creates a temporary file with a blob’s contents
-            </p>
-
-            <p class = 'text'>git-var<br>
-                Show a Git logical variable
-            </p>
-
-            <p class = 'text'>git-verify-pack<br>
-                Validate packed Git archive files
-            </p>
-            <br>
-            In general, the interrogate commands do not touch the files in the working tree.
+    <br>
+    <p class='text'><span class="subtext">git-cherry</span><br>
+        Find commits yet to be applied to upstream </p>
+        <br>
+    <p class='text'><span class="subtext">git-diff-files</span><br>
+        Compares files in the working tree and the index
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-diff-index</span><br>
+        Compare a tree to the working tree or index
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-diff-tree</span><br>
+        Compares the content and mode of blobs found via two tree objects
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-for-each-ref</span><br>
+        Output information on each ref
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-for-each-repo</span><br>
+        Run a Git command on a list of repositories
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-get-tar-commit-id</span><br>
+        Extract commit ID from an archive created using git-archive
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-ls-files</span><br>
+        Show information about files in the index and the working tree
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-ls-remote</span><br>
+        List references in a remote repository
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-ls-tree</span><br>
+        List the contents of a tree object
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-merge-base</span><br>
+        Find as good common ancestors as possible for a merge
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-name-rev</span><br>
+        Find symbolic names for given revs
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-pack-redundant</span><br>
+        Find redundant pack files
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-rev-list</span><br>
+        Lists commit objects in reverse chronological order
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-rev-parse</span><br>
+        Pick out and massage parameters
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-show-index</span><br>
+        Show packed archive index
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-show-ref</span><br>
+        List references in a local repository
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-unpack-file</span><br>
+        Creates a temporary file with a blob’s contents
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-var</span><br>
+        Show a Git logical variable
+    </p>
+    <br>
+    <p class='text'><span class="subtext">git-verify-pack</span><br>
+        Validate packed Git archive files
+    </p>
+    </span><br>
+    <span class='text'>In general, the interrogate commands do not touch the files in the working tree.</span>
 </body>
 
 </html>
+
+{% endblock %}

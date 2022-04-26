@@ -1,115 +1,141 @@
-<html>
-    <head>
-        <title>
-            Ancillary
-        </title>
-    </head>
-    <body>
-        <h2 style="color:orangered">Manipulators:</h2>
+{% extends 'gitt/header.html' %}
+{% block content %}
 
-    <p class = 'text'>git-config<br>
+<html>
+<style>
+    .text {
+        font-size: large;
+    }
+
+
+    .subtext {
+        font-size: larger;
+        color: orangered;
+    }
+
+    .heading {
+        font-size: xx-large;
+        color: orangered;
+    }
+</style>
+
+<head>
+    <title>
+        Ancillary
+    </title>
+</head>
+
+<body>
+    <br>
+    <h2 class="heading">Manipulators:</h2>
+    <br>
+    <p class='text'><span class='subtext'>git-config</span><br>
         Get and set repository or global options
     </p>
-
-    <p class = 'text'>git-fast-export<br>
+    <br>
+    <p class='text'><span class='subtext'>git-fast-export</span><br>
         Git data exporter
     </p>
-
-    <p class = 'text'>git-fast-import<br>
+    <br>
+    <p class='text'><span class='subtext'>git-fast-import</span><br>
         Backend for fast Git data importers
     </p>
-
-    <p class = 'text'>git-filter-branch<br>
+    <br>
+    <p class='text'><span class='subtext'>git-filter-branch</span><br>
         Rewrite branches
     </p>
-
-    <p class = 'text'>git-mergetool<br>
+    <br>
+    <p class='text'><span class='subtext'>git-mergetool</span><br>
         Run merge conflict resolution tools to resolve merge conflicts
     </p>
-
-    <p class = 'text'>p>git-pack-refs<br>
+    <br>
+    <p class='text'>p><span class='subtext'>git-pack-refs</span><br>
         Pack heads and tags for efficient repository access
     </p>
-
-    <p class = 'text'>git-prune<br>
+    <br>
+    <p class='text'><span class='subtext'>git-prune</span><br>
         Prune all unreachable objects from the object database
     </p>
-
-    <p class = 'text'>git-reflog<br>
+    <br>
+    <p class='text'><span class='subtext'>git-reflog</span><br>
         Manage reflog information
     </p>
-
-    <p class = 'text'>git-remote<br>
+    <br>
+    <p class='text'><span class='subtext'>git-remote</span><br>
         Manage set of tracked repositories
     </p>
-
-    <p class = 'text'>git-repack<br>
+    <br>
+    <p class='text'><span class='subtext'>git-repack</span><br>
         Pack unpacked objects in a repository
     </p>
-
-    <p class = 'text'>git-replace<br>
+    <br>
+    <p class='text'><span class='subtext'>git-replace</span><br>
         Create, list, delete refs to replace objects
     </p>
-    <h2 style="color:orangered">Interrogators:</h2>
-
-    <p class = 'text'>git-annotate<br>
+    <br>
+    <h2 class="heading">Interrogators:</h2>
+    <br>
+    <p class='text'><span class='subtext'>git-annotate</span><br>
         Annotate file lines with commit information
     </p>
-
-    <p class = 'text'>git-blame<br>
+    <br>
+    <p class='text'><span class='subtext'>git-blame</span><br>
         Show what revision and author last modified each line of a file
     </p>
-
-    <p class = 'text'>git-bugreport<br>
+    <br>
+    <p class='text'><span class='subtext'>git-bugreport</span><br>
         Collect information for user to file a bug report
     </p>
-
-    <p class = 'text'>git-count-objects<br>
+    <br>
+    <p class='text'><span class='subtext'>git-count-objects</span><br>
         Count unpacked number of objects and their disk consumption
     </p>
-
-    <p class = 'text'>git-difftool<br>
+    <br>
+    <p class='text'><span class='subtext'>git-difftool</span><br>
         Show changes using common diff tools
     </p>
-
-    <p class = 'text'>git-fsck<br>
+    <br>
+    <p class='text'><span class='subtext'>git-fsck</span><br>
         Verifies the connectivity and validity of the objects in the database
     </p>
-
-    <p class = 'text'>it-help<br>
+    <br>
+    <p class='text'><span class='subtext'>it-help</span><br>
         Display help information about Git
     </p>
-
-    <p class = 'text'>git-instaweb<br>
+    <br>
+    <p class='text'><span class='subtext'>git-instaweb</span><br>
         Instantly browse your working repository in gitweb
     </p>
-
-    <p class = 'text'>git-merge-tree<br>
+    <br>
+    <p class='text'><span class='subtext'>git-merge-tree</span><br>
         Show three-way merge without touching index
     </p>
-
-    <p class = 'text'>git-rerere<br>
+    <br>
+    <p class='text'><span class='subtext'>git-rerere</span><br>
         Reuse recorded resolution of conflicted merges
     </p>
-
-    <p class = 'text'>git-show-branch<br>
+    <br>
+    <p class='text'><span class='subtext'>git-show-branch</span><br>
         Show branches and their commits
     </p>
-
-    <p class = 'text'>git-verify-commit<br>
+    <br>
+    <p class='text'><span class='subtext'>git-verify-commit</span><br>
         Check the GPG signature of commits
     </p>
-
-    <p class = 'text'>git-verify-tag<br>
+    <br>
+    <p class='text'><span class='subtext'>git-verify-tag</span><br>
         Check the GPG signature of tags
     </p>
-
-    <p class = 'text'>git-whatchanged<br>
+    <br>
+    <p class='text'><span class='subtext'>git-whatchanged</span><br>
         Show logs with difference each commit introduces
     </p>
-
-    <p class = 'text'>gitweb<br>
+    <br>
+    <p class='text'><span class='subtext'>gitweb</span><br>
         Git web interface (web frontend to Git repositories)
     </p>
-    </body>
+</body>
+
 </html>
+
+{% endblock %}

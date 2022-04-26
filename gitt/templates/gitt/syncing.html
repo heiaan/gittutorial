@@ -1,4 +1,23 @@
+{% extends 'gitt/header.html' %}
+{% block content %}
+
 <html>
+<style>
+    .text {
+        font-size: large;
+    }
+
+
+    .subtext {
+        font-size: larger;
+        color: orangered;
+    }
+
+    .heading {
+        font-size: xx-large;
+        color: orangered;
+    }
+</style>
 
 <head>
     <title>
@@ -7,54 +26,69 @@
 </head>
 
 <body>
-    <h2 style="color:orangered">Syncing repositories</h2>
-
-    <p class = 'text'>git-daemon<br>
+    <h2 class="heading">Syncing repositories</h2>
+    <br>
+    <p class='text'>
+        <span class='subtext'>git-daemon</span><br>
         A really simple server for Git repositories
     </p>
-
-    <p class = 'text'>git-fetch-pack<br>
+    <br>
+    <p class='text'>
+        <span class='subtext'>git-fetch-pack</span><br>
         Receive missing objects from another repository
     </p>
-
-    <p class = 'text'>git-http-backend<br>
+    <br>
+    <p class='text'>
+        <span class='subtext'>git-http-backend</span><br>
         Server side implementation of Git over HTTP
     </p>
-
-    <p class = 'text'>git-send-pack<br>
+    <br>
+    <p class='text'>
+        <span class='subtext'>git-send-pack</span><br>
         Push objects over Git protocol to another repository
     </p>
-
-    <p class = 'text'>git-update-server-info<br>
+    <br>
+    <p class='text'>
+        <span class='subtext'>git-update-server-info</span><br>
         Update auxiliary info file to help dumb servers
     </p>
-
-    <p class = 'text'>The following are helper commands used by the above; end users typically do not use them directly.</p>
-
-    <p class = 'text'>git-http-fetch<br>
+    <br>
+    <br>
+    <p class='text' style="font-weight:bold">
+        The following are helper commands used by the above; end users typically do not use them directly.
+    </p>
+    <br>
+    <p class='text'>
+        <span class='subtext'>git-http-fetch</span><br>
         Download from a remote Git repository via HTTP
     </p>
-
-    <p class = 'text'>git-http-push<br>
+    <br>
+    <p class='text'>
+        <span class='subtext'>git-http-push</span><br>
         Push objects over HTTP/DAV to another repository
     </p>
-
-    <p class = 'text'>git-receive-pack<br>
+    <br>
+    <p class='text'>
+        <span class='subtext'>git-receive-pack</span><br>
         Receive what is pushed into the repository
     </p>
-
-    <p class = 'text'>git-shell<br>
+    <br>
+    <p class='text'>
+        <span class='subtext'>git-shell</span><br>
         Restricted login shell for Git-only SSH access
     </p>
-
-    <p class = 'text'>git-upload-archive<br>
+    <br>
+    <p class='text'>
+        <span class='subtext'>git-upload-archive</span><br>
         Send archive back to git-archive
     </p>
-
-    <p class = 'text'>git-upload-pack<br>
+    <br>
+    <p class='text'>
+        <span class='subtext'>git-upload-pack</span><br>
         Send objects packed back to git-fetch-pack
     </p>
 
 </body>
 
 </html>
+{% endblock %}
